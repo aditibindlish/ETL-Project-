@@ -1,0 +1,35 @@
+category
+-
+category_id VARCHAR PK
+category VARCHAR
+
+
+subcategory
+-
+subcategory_id VARCHAR PK
+subcategory VARCHAR 
+	
+
+contact_info
+-
+contact_id INTEGER PK 
+first_name varchar(50) 
+last_name varchar(50) 
+email varchar(50)
+
+campaign 
+-
+cf_id INTEGER PK
+contact_id INTEGER FK - contact_info.contact_id
+company_name varchar(50)
+description varchar(50)
+goal Double
+pledged double
+outcome varchar(50)
+backers_count INTEGER
+country	varchar(50)
+currency varchar(50)
+Launched_Date Date
+End_Date Date
+category_id VARCHAR(50) FK - category.category_id
+subcategory_id VARCHAR(50) FK - subcategory.subcategory_id
